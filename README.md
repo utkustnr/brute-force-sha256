@@ -1,4 +1,4 @@
-# brute-force-sha256
+# brute-search-sha256
 Bunch of scripts to find out 16 digit number from sha256 digest.
 
 I initially created these because I lost my android's bootloader unlock code and I had nvme partition backup which had sha256 of bootloader code inside. 
