@@ -22,6 +22,8 @@ I initially created these because I lost my android's bootloader unlock code and
 
 sane-brute.py : This is what you'd want to use probably. Uses sensible amount of ram and does the job noticably faster than others. Splits 16 digit number into 8 digit 2 chunks and saves each into a list. Then combinetes 2 list against each other and write results to a file. Hashing function takes each line as an input. Could take up a lot of space but uses less ram.
 
+alternate-brute.py : Another shortcut attempt. If you know that the number you're looking for has no duplicate (eg. 99, 88, 77) digits then this might help out a little.
+
 brutecpu.py : Second best that doesn't consume huge chunks of memory or space. Same as bruteba.sh but faster.
 
 brutejit.py : Basically a failed attempt at making brutecpu.py gpu accelerated. Apperantly you can't use hashlib inside numba. If you do it falls back to object mode which is basically same as brutecpu.py but slower. I tried rewriting whole hashing function from scratch for it but gave up eventually.
